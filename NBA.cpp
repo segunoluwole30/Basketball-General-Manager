@@ -293,7 +293,8 @@ void NBA::simSeason()
                     getTeams().at(i)->teamPlayers.at(j)->avgPoints += (getTeams().at(i)->teamPlayers.at(j)->totalPoints)/(getTeams().at(i)->totalGames);
                 }
 
-                if (getTeams().at((getTeams().size())-1)->totalGames > 70) //check if last team in nba has played more than 70 games
+                /*FIGURE OUT HOW TO GET EACH TEAM TO PLAY 82 GAMES*/
+                if (getTeams().at((getTeams().size())-1)->totalGames > 65) //check if last team in nba has played more than 70 games
                     {
                         break;
                     }
