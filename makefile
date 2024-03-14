@@ -13,10 +13,6 @@ all: $(OUTPUT)
 
 $(OUTPUT): $(SOURCES)
 	$(CXX) $(SOURCES) $(CXXFLAGS) -o $(OUTPUT)
-
-
-run: $(OUTPUT)
-	./$(OUTPUT)
 	
 clean:
 	rm -f $(OUTPUT)
